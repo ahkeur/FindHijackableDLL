@@ -12,7 +12,7 @@ if len(sys.argv) < 2:
 target_dll = sys.argv[1]
 
 target_path = Path(target_dll)
-target_dll_no_extension = target_path.stem  # uniquement le nom du module, sans extension
+target_dll_no_extension = target_path.stem 
 
 dll = pefile.PE(str(target_path))
 dll_basename = target_path.stem
